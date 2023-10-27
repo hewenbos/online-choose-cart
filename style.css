@@ -2,3 +2,100 @@
   margin: 0;
   padding: 0;
 }
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.warp{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.warp .app{
+  flex: 3;
+}
+.warp .tool{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.warp .tool .tool_footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-top: 1px solid #5f5e5e;
+}
+
+.warp .tool .tool_footer .next_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  background-color: #f60;
+  color: #fff;
+  cursor: pointer;
+}
+
+.warp .tool .group_List{
+  overflow-y: scroll;
+
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+.warp .tool .group_List .group{
+  padding: 10px;
+  text-align: center;
+  margin: 10px 0;
+}
+.warp .tool .group_List .group .title{
+  margin: 10px 0;
+  font-size: 15px;
+}
+.warp .tool .group_List .group p {
+  font-size: 12px;
+}
+.warp .tool .group_List .group .group-warp{
+  display: flex;
+  justify-content: space-between;
+}
+.warp .tool .group_List .group .group-warp .group_item{
+
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.warp .tool .group_List .group .group-warp .group_item .col{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.warp .tool .group_List .group .group-warp .group_item .text-select{
+  width: 100%;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.warp .tool .group_List .group .selector{
+  display: flex;
+  align-items: center;
+}
+
+.warp .tool .group_List .group .selector .group_item{
+  flex: 1;
+  margin: 5px;
+}
